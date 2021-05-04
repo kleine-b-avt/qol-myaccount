@@ -15,7 +15,7 @@
 export default {
   data() {
     return {
-      pageName: 'Home!',
+      pageName: 'Sports',
       snackbar: true,
     }
   },

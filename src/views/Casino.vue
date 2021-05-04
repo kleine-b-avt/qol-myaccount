@@ -15,7 +15,7 @@
 export default {
   data() {
     return {
-      pageName: 'Home!',
+      pageName: 'Casino',
       snackbar: true,
     }
   },
