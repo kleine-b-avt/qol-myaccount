@@ -8,7 +8,7 @@
         <span :ref="nav.label" @click="nav.path !== $route.path && changeRoute(nav.path)" :class="nav.path === $route.path && 'active-nav'">{{ nav.label }}</span>
       </v-btn>
     </nav>
-    <v-btn v-if="isNavWrapped" :style="chevronX" @click="show" absolute text>
+    <v-btn v-if="isNavWrapped" :style="chevronX" @click="show" absolute icon>
       <v-icon>mdi-chevron-down</v-icon>
     </v-btn>
     <v-menu v-model="moreMenu.show" :position-x="moreMenu.x" :position-y="moreMenu.y" absolute offset-y dark>
@@ -24,7 +24,7 @@
       </v-list>
     </v-menu>
     <v-spacer></v-spacer>
-    <v-btn text>
+    <v-btn icon>
       <v-icon>mdi-dots-grid</v-icon>
     </v-btn>
   </v-app-bar>
@@ -67,6 +67,8 @@ export default {
           item.isWrapped = false
           item.path = `/${item.label.toLowerCase()}`
           })
+    //   navLabels[0].path = "/sports"
+    //   navLabels[1].path = "/casino"
       return navLabels
     },
   },
@@ -111,17 +113,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.nav-wrap {
-  max-height: 2.25rem;
-  overflow: hidden;
-}
+<style lang="sass" scoped>
+.nav-wrap
+  max-height: 2.25rem
+  overflow: hidden
 
-.text-compressed {
-  letter-spacing: 0 !important;
-}
+.text-compressed 
+  letter-spacing: 0 !important
 
-.active-nav{
-    color: white;
-}
+.active-nav
+    color: white
+
 </style>

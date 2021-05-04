@@ -1,0 +1,93 @@
+$red: ();
+$red: map-deep-merge(
+  (
+    'base': #E24F4F,
+    'lighten-5': #FDEAED,
+    'lighten-4': #FACBD0,
+    'lighten-3': #E69798,
+    'lighten-2': #D96F71,
+    'lighten-1': #E24F4F,
+    'darken-1': #E63E36,
+    'darken-2': #D73535,
+    'darken-3': #C52C2F,
+    'darken-4': #B82528,
+    'darken-5': #A9191D
+  ),
+  $red
+);
+
+$blue: ();
+$blue: map-deep-merge(
+  (
+    'base': #009FD9,
+    'lighten-5': #E1F6FB,
+    'lighten-4': #B4E6F6,
+    'lighten-3': #83D6F1,
+    'lighten-2': #55C6EC,
+    'lighten-1': #32B9E9,
+    'darken-1': #0BADE7,
+    'darken-2': #009FD9,
+    'darken-3': #008CC6,
+    'darken-4': #007BB2,
+    'darken-5': #005B91
+  ),
+  $blue
+);
+
+$green: ();
+$green: map-deep-merge(
+  (
+    'base': #84B752,
+    'lighten-5': #F2F9EB,
+    'lighten-4': #DEEECC,
+    'lighten-3': #C9E3AC,
+    'lighten-2': #B3D88C,
+    'lighten-1': #A3D072,
+    'darken-1': #93C75B,
+    'darken-2': #84B752,
+    'darken-3': #70A348,
+    'darken-4': #5E8F3E,  
+    'darken-5': #3E6C2E
+  ),
+  $green
+);
+
+$orange: ();
+$orange: map-deep-merge(
+  (
+    'base': #FF9200,
+    'lighten-5': #FFF8E1,
+    'lighten-4': #FFEDB4,
+    'lighten-3': #FEE283,
+    'lighten-2': #FED751,
+    'lighten-1': #FECD2A,
+    'darken-1': #FFC40D,
+    'darken-2': #FFB604,
+    'darken-3': #FFA301,
+    'darken-4': #FF9200,
+    'darken-5': #FF7200
+  ),
+  $orange
+);
+
+$shades: ();
+$shades: map-deep-merge(
+  (
+    'black': #000000,
+    'white': #FFFFFF,
+    'transparent': transparent
+  ),
+  $shades
+);
+
+$colors: ();
+$colors: map-deep-merge(
+  (
+    'red': $red,
+    'blue': $blue,
+    'green': $green,
+    'orange': $orange,
+    'shades': $shades
+  ),
+  $colors
+);

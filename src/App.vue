@@ -21,12 +21,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-#app{
-  min-width: 20rem;
-}
-#app, div, span{
-  font-family: 'Inter', sans-serif;
-}
+<style lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap')
+#app
+  min-width: 20rem
+
 </style>

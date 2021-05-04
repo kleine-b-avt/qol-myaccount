@@ -1,0 +1,107 @@
+$color-pack: true;
+
+$body-font-family: 'Inter', Helvetica, Arial, sans-serif;
+
+$border-radius-root: 8px;
+
+$font-weights: ();
+$font-weights: map-deep-merge(
+  (
+    'thin': 100,
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'semibold': 600,
+    'bold': 700,
+    'black': 900
+  ),
+  $font-weights
+);
+
+$heading-font-family: $body-font-family;
+
+$headings: ();
+$headings: map-deep-merge(
+  (
+    'h1': (
+      'size': rem(96),
+      'weight': 400,
+      'line-height': rem(120),
+      'letter-spacing': rem(-2),
+      'font-family': $heading-font-family,
+    ),
+    'h2': (
+      'weight': 400,
+      'line-height': rem(72),
+      'letter-spacing': rem(-1),
+      'font-family': $heading-font-family,
+    ),
+    'h3': (
+      'weight': 500,
+      'line-height': rem(56),
+      'letter-spacing': rem(-.5),
+      'font-family': $heading-font-family,
+    ),
+    'h4': (
+      'weight': 500,
+      'line-height': rem(40),
+      'letter-spacing': rem(-.25),
+      'font-family': $heading-font-family,
+    ),
+    'h5': (
+      'weight': 500,
+      'line-height': rem(32),
+      'letter-spacing': rem(-.5),
+      'font-family': $heading-font-family,
+    ),
+    'h6': (
+      'weight': 600,
+      'line-height': rem(24),
+      'letter-spacing': rem(-.35),
+      'font-family': $heading-font-family,
+    ),
+    'subtitle-1': (
+      'weight': 600,
+      'line-height': rem(24),
+      'letter-spacing': rem(-.35),
+      'font-family': $body-font-family,
+    ),
+    'subtitle-2': (
+      'weight': 600,
+      'line-height': rem(20),
+      'letter-spacing': rem(-.4),
+      'font-family': $body-font-family,
+    ),
+    'body-1': (
+      'weight': 400,
+      'line-height': rem(24),
+      'letter-spacing': rem(0),
+      'font-family': $body-font-family,
+    ),
+    'body-2': (
+      'weight': 400,
+      'line-height': rem(20),
+      'letter-spacing': rem(-.25),
+      'font-family': $body-font-family,
+    ),
+    'button': (
+      'weight': 700,
+      'line-height': rem(16),
+      'letter-spacing': rem(-.25),
+      'font-family': $body-font-family,
+    ),
+    'caption': (
+      'weight': 400,
+      'line-height': rem(16),
+      'letter-spacing': rem(0),
+      'font-family': $body-font-family,
+    ),
+    'overline': (
+      'weight': 400,
+      'line-height': rem(16),
+      'letter-spacing': rem(1),
+      'font-family': $body-font-family,
+    )
+  ),
+  $headings
+);

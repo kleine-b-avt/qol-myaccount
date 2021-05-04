@@ -1,0 +1,31 @@
+$material-dark-elevation-colors: ();
+$material-dark-elevation-colors: map-deep-merge(
+  (
+    '0': #010101,
+    '1': #262626,
+    '2': #262626,
+    '3': #262626,
+    '4': #262626,
+    '6': #262626,
+    '8': #262626,
+    '12': #262626,
+    '16': #262626,
+    '24': #262626
+  ),
+  $material-dark-elevation-colors
+);
+
+$material-dark: ();
+$material-dark: map-deep-merge(
+  (
+    'background': #010101,
+    'dividers': rgba(map-get($shades, 'white'), 0.08),
+    'text': (
+      'theme': map-get($shades, 'white'),
+      'primary': map-get($shades, 'white'),
+      'secondary': rgba(map-get($shades, 'white'), 0.6),
+      'disabled': rgba(map-get($shades, 'white'), 0.38)
+    ),
+  ),
+  $material-dark
+);

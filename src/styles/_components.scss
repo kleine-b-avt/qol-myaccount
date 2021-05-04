@@ -1,0 +1,63 @@
+/* 
+  VBtn
+ */
+$btn-border-radius: 4px;
+$btn-font-weight: 700;
+$btn-letter-spacing: rem(-.25);
+
+$btn-sizes: ();
+$btn-sizes: map-deep-merge(
+  (
+    'large': 48,
+    'x-large': 56
+  ),
+  $btn-sizes
+);
+// END VBtn
+
+/*
+  VChip
+*/
+$chip-close-size: 16px;
+$chip-icon-size: 20px;
+$icon-sizes: ();
+$icon-sizes: map-deep-merge(
+  (
+    'default': (
+      'font-size': 12,
+    )
+  ),
+  $icon-sizes
+);
+// END VChip
+
+/*
+  VDialog
+*/
+$dialog-card-actions-padding: 8px 12px 12px;
+$dialog-card-text-padding: 0 24px 16px;
+$dialog-card-title-padding: 24px 24px 8px;
+// END VDialog
+
+/*
+  VBanner
+*/
+$banner-icon-padding: 12px;
+// END VBanner
+
+/*
+  VList
+*/
+$list-item-avatar-margin-y: 12px;
+
+$list-item-padding: 0 24px;
+$list-item-action-margin: 20px 0;
+$list-item-action-icon-margin: 24px;
+// END VList
+
+/*
+  VTextField
+*/
+$text-field-border-radius: $border-radius-root / 2;
+$text-field-filled-margin-top: 20px;
+// END VTextField

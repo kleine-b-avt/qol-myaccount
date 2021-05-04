@@ -1,0 +1,15 @@
+$material-light: ();
+$material-light: map-deep-merge(
+  (
+  'app-bar': map-get($shades, 'white'),
+  'background': #F6F6F6,
+  'dividers': rgba(map-get($shades, 'black'), 0.08),
+  'text': (
+      'theme': map-get($shades, 'white'),
+      'primary': rgba(map-get($shades, 'black'), 0.87),
+      'secondary': rgba(map-get($shades, 'black'), 0.6),
+      'disabled': rgba(map-get($shades, 'black'), 0.38)
+    ),
+  ),
+  $material-light
+);
