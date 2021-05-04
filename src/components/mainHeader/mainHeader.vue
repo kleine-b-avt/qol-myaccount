@@ -1,7 +1,7 @@
 <template>
   <v-app-bar app color="grey darken-4" dark height="72">
     <div class="d-flex align-center">
-      <v-img alt="UX" class="shrink mr-2" contain src="../../assets/uxlogo.svg" width="70" @click="changeRoute('/')" />
+      <v-img alt="UX" class="shrink mr-2" contain src="../../assets/uxlogo.svg" width="70" @click="changeRoute('/')" style="cursor:pointer"/>
     </div>
     <nav class="nav-wrap d-none d-sm-inline-flex flex-wrap mr-6">
       <v-btn v-for="(nav, i) in navItems" :key="i" class="grey--text text--lighten-1 font-weight-bold text-compressed" text>
