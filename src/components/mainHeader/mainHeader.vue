@@ -67,8 +67,6 @@ export default {
           item.isWrapped = false
           item.path = `/${item.label.toLowerCase()}`
           })
-    //   navLabels[0].path = "/sports"
-    //   navLabels[1].path = "/casino"
       return navLabels
     },
   },
